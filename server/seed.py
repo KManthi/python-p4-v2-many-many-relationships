@@ -49,15 +49,6 @@ with app.app_context():
     m2.employees.append(e4)
     db.session.commit()
 
-    # Many-to-many relationship between employee and project
-    # e1.projects.append(p1)
-    # e1.projects.append(p2)
-    # e2.projects.append(p1)
-    # e2.projects.append(p2)
-    # e3.projects.append(p1)
-    # e3.projects.append(p2)
-    # e4.projects.append(p1)
-
     # Many-to-many relationship between employee and project through assignment
     a1 = Assignment(role='Project manager',
                     start_date=datetime.datetime(2023, 5, 28),
